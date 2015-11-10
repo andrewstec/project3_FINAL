@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="This page provides information about the events held
+                   at the Salmon Hatchery located in Capilano River Regional Park."/>
+    <meta name="author" content="Rosalia Matzumiya Garcia"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>Events</title>
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <header id="page-header">
+        <nav id="site-nav">
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li>
+                    <a href="events.html">Events</a>
+                    <ul>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="prices-and-schedule.html">Prices and Schedule</a></li>
+                <li>
+                    <a href="tours.html">Tours</a>
+                    <ul>
+                        <li><a href="recreational-tours.html">Recreational Tours</a></li>
+                        <li><a href="educational-tours.html">Educational Tours</a></li>
+                    </ul>
+                </li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <!-- #page-header -->
+    <h1>Upcoming Events</h1>
+    <h3>Highlights of past and upcoming events. To see all events go to Calendar.</h3>
+    <a href="Calendar.html" id="calendar">
+        <img src="images/2015calendar.jpg" alt="2015 Calendar" width="450" height="450">
+    </a>
+    <a href="Calendar.html"><input type="submit" name="calendar" value="View Calendar >>">
+    </a>
+    <iframe src="https://www.psf.ca/what-we-do" width="650" height="450"
+            allowfullscreen frameborder="0"></iframe>
+	<ol>
+        <li><a href="#calendar">Today's Events</a></li>
+        <li><a href="#upcoming_events">Upcoming Events</a></li>
+        <li><a href="#video">Past Events</a></li>
+        <li><label>By Category: </label>
+            <select name="category" id="category">
+                <option value="community">Community & Recreation</option>
+                <option value="anniversary">20th Anniversary</option>
+                <option value="festivals">Festivals</option>
+            </select>
+        </li>
+    </ol>
+			
+    <video id="video" width="1100" height="720" controls>
+        <source src="videos/PinkSalmon_2015.mp4" type="video/mp4" />
+        <source src="videos/PinkSalmon_2015.ogv" type="video/ogg" />
+
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="http://download.macromedia.com/pub/shockwave/
+                        cabs/flash/swflash.cab#version=6,0,40,0"
+                width="1100" height="720"
+                id="pink_salmon">
+            <param name="movie"
+                   value="videos/PinkSalmon_2015.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <embed src="videos/PinkSalmon_2015.swf" quality="high" bgcolor="#ffffff"
+                   width="468" height="60"
+                   name="mymoviename" align="" type="application/x-shockwave-flash"
+                   pluginspage="http://www.macromedia.com/go/getflashplayer">
+            </embed>
+        </object>
+
+        <p>Video is not supported in your browser. Try the following links</p>
+    </video>
+
+    <section itempscope itemtype="http://www.data-vocabulary.org/Event/">
+        <table id="upcoming_events">
+            <thead>
+            <tr>
+                <th>Event Date</th>
+                <th>Event Name</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th itemprop="startdate">October 09:</th>
+                    <td itemprop="name">Come get your salmon on!</td>
+                    <td itemprop="description">Come celebrate National Salmon Day with us!</td>
+                </tr>
+                </li>
+                <tr>
+                    <th itemprop="startdate">October 14:</th>
+                    <td itemprop="name">Pink salmon festival</td>
+                    <td itemprop="description">Rain or shine! Join us for a festival at Kit's Point.</td>
+                </tr>
+                <tr>
+                    <th itemprop="startdate">October 25:</th>
+                    <td itemprop="name">Salmon Come Home</td>
+                    <td itemprop="description">Join City of Coquitlam to welcome the salmon home!</td>
+                </tr>
+            </tbody>
+        </table><!-- list upcoming events -->
+    </section><!--upcoming events -->
+    <footer id="page-footer">
+        <p>&copy; 2015 <span class="company-name">Get Your Salmon On!</span></p>
+    </footer> <!-- #page-footer -->
+</div><!-- wrapper -->
+</body>
+</html>
