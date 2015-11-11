@@ -74,6 +74,8 @@ body{
 
 a{font-family: 'Lato', sans-serif;}
 
+/*======= *HEADER STYLES =======*/
+
 img#logo {
     padding-top: 160px;
 }
@@ -128,6 +130,30 @@ header a{text-decoration: none; color:#fff;}
 
 #shopping-cart img{position: relative; top:-8px;}
 
+.header-container{
+  width: 100%;
+  max-width: 74.063em !important;
+  margin: 0 auto;
+}
+
+.headings{
+  padding: 60px 0;
+  width: 60%;
+  max-width: 970px;
+  margin: 5em auto;
+  text-align: center;
+  color:#fff;
+}
+.headings h1{
+  font-size: 4.4375em;
+  line-height: 1;
+  padding: 0 0 0.5625em /* 9px */;
+  margin-top: .75em;
+}
+.headings h2{font-size: 1.7em;}
+
+/*======= *HEADER STYLES END$$$ =======*/
+
 .wrapper{position: relative;}
 
 nav {
@@ -175,7 +201,25 @@ footer ol li a:hover{
   text-shadow:1px 1px 20px #fff ;
 }
 
+#site-nav {
+    float: right;
+    padding: 0 20px;
+}
 
+#site-nav ul li{
+    float: left;
+}
+
+#site-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    float: left;
+}
+
+#site-nav ul li ul {
+    display: none;
+}
 
 /*======= Nav Icons =======*/
 nav ul li a::before {
@@ -246,8 +290,6 @@ nav li a[href="contact.html"]::before {
     color: #fff;
 }
 
-
-
 #navbar ul li a::before {
     content: "\f1db";
     font-family: FontAwesome;
@@ -268,6 +310,8 @@ nav li a[href="contact.html"]::before {
 
 }
 
+/*======= *ASIDE STYLES =======*/
+
 aside {
   position: fixed;
   bottom: 0;
@@ -287,9 +331,34 @@ aside *{
   padding:10px 20px;
 }
 
+/*======= *ASIDE STYLES END $$$ =======*/
+
+/*======= *MAIN STYLES =======*/
+
+/*------- *About Page Styles -------*/
+
+article{
+  color:#fff;
+  padding: 100px 0;
+}
+
+article#company-profile,
+article.our-mission,
+article.our-vision,
+article.find-us{padding: 0};
+
+article:nth-child(odd){
+  background: #939393;
+}
+
+article:nth-child(even){
+  background: #696969;
+}
+
 article.find-us{
   clear:both;
   overflow: hidden;
+  background-color: #2a2a2a;
 }
 
 article.find-us h2 {
@@ -312,12 +381,12 @@ article.find-us h2::before {
 
 main article:nth-child(4) h2::after{margin: .3em auto;}
 
-#company-profile{
+article#company-profile{
   float: right;
   width: 75%;
 }
 
-#company-profile a{
+article#company-profile a{
   color: aqua;
   text-decoration: none;
 }
@@ -328,84 +397,7 @@ article iframe {
   height: 474px;
 }
 
-.i4ewOd-pzNkMb-haAclf {
-    background: #333 !important;
-}
-
-footer {
-  text-align: center;
-  color: #fff;
-}
-
-footer ol{padding: 40px;}
-
-footer ol#social_media{padding:0; padding-top: 40px;}
-
-footer ol li{
-  display: inline;
-}
-
-footer ol li a{
-  color:#fff;
-  text-decoration: none;
-  padding: 0 10px;
-  font-size: 12px;
-}
-
-footer span.company-name{
-  display: block;
-  background-color: #121212;
-  color:#fff;
-  padding: 20px;
-}
-
-/*end end end*/
-
-.header-container{
-  width: 100%;
-  max-width: 74.063em !important;
-  margin: 0 auto;
-}
-
-#site-nav {
-    float: right;
-    padding: 0 20px;
-}
-
-#site-nav ul li{
-    float: left;
-}
-
-#site-nav li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    float: left;
-}
-
-#site-nav ul li ul {
-    display: none;
-}
-
-.headings{
-  padding: 60px 0;
-  width: 60%;
-  max-width: 970px;
-  margin: 5em auto;
-  text-align: center;
-  color:#fff;
-}
-.headings h1{
-  font-size: 4.4375em;
-  line-height: 1;
-  padding: 0 0 0.5625em /* 9px */;
-  margin-top: .75em;
-}
-.headings h2{font-size: 1.7em;}
-
-/*======= Section =======*/
-
-#company-profile{
+article#company-profile{
   height: 474px;
   padding-top: 130px;
   background-image: url(../images/light-love-clouds-river.png);
@@ -465,18 +457,66 @@ main h2::after {
 
 .our-mission p{margin:0 auto;}
 
-.our-mission{
+article.our-mission{
   width: 35%;
   color:#fff;
   background-color: #333;
 }
 
-.our-vision{
+article.our-vision{
   width: 65%;
   background-image: url(../images/fisherman-239487_1920.png);
   background-color: #1176bc;
   color: #fff;
 }
+
+/*------- *About Page Styles End $$$ -------*/
+
+/*------- *News Page Styles -------*/
+
+
+
+/*#fish-rankings *,
+#salmon-rides *,
+#mailing-list *,
+#websters-dictionary *,
+#salmon-population-2015 *{padding: 0 20px;}*/
+
+/*------- *News Page Styles End $$$ -------*/
+
+/*======= *MAIN STYLES END $$$ =======*/
+
+/*======= *FOOTER STYLES =======*/
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+footer ol{padding: 40px;}
+
+footer ol#social_media{padding:0; padding-top: 40px;}
+
+footer ol li{
+  display: inline;
+}
+
+footer ol li a{
+  color:#fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+footer span.company-name{
+  display: block;
+  background-color: #121212;
+  color:#fff;
+  padding: 20px;
+}
+
+/*======= *FOOTER STYLES END $$$ =======*/
+
 
 /*======= Media Queries =======*/
 
