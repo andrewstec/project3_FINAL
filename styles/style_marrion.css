@@ -90,8 +90,32 @@ header h1{
   line-height: 1;
   padding: 0 0 0.5625em;
   margin-top: 1.5em;
-  margin: 77px 0 0;
+  margin: 30px 0 0;
   font-family: 'Lato', sans-serif;
+}
+
+header form{
+  width: 350px;
+  margin:0 auto;
+  padding:10px 5px;
+  background: rgba(0,0,0,.5);
+  border-radius: 3px;
+}
+
+header input[type="search"]{
+  border: none;
+  border-radius: 3px;
+  padding:10px;
+  width: 250px;
+  color:#000;
+}
+
+header input[type="submit"]{
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(17, 118, 188,.7);
+  color:#fff;
 }
 
 header a{text-decoration: none; color:#fff;}
