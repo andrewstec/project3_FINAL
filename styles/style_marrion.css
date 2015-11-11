@@ -1,0 +1,506 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+iframe{
+  max-width: 100%;
+}
+
+table{margin:20px 0;}
+
+th{
+  padding: 5px 75px 20px 0;
+  text-align: left;
+  color: #977e87;
+  font-size: 18px;
+}
+
+td{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+/*End reset*/
+
+body{ 
+  font-family: Roboto,Arial,sans-serif;
+  background:#333;
+  /*overflow: hidden;*/
+}
+
+a{font-family: 'Lato', sans-serif;}
+
+header{
+  height: 955px;
+  overflow: hidden;
+  background: url(../images/sea-nature-sunny-beach.jpg)no-repeat;
+  background-size: cover;
+  background-color: #1176bc;
+  color: #fff;
+  text-align: center;
+}
+
+header h1{
+  font-size: 3.4375em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0 0 0.5625em;
+  margin-top: 1.5em;
+  padding: 300px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper{position: relative;}
+
+nav {
+  overflow: hidden;
+  background: #121212;
+  padding: 15px;
+  background: rgba(0,0,0,.5);
+  padding: 15px 0;
+  position: absolute;
+  top: -102px;
+  left: 0;
+  width: 100%;
+}
+
+nav::before {
+  content: "GYSO";
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  top: 35%;
+  left: 3%;
+}
+
+nav ul {
+  float: right;
+  padding: 0 20px;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  float: left;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav ul li a:hover,
+footer ol li a:hover{
+  text-shadow:1px 1px 20px #fff ;
+}
+
+
+
+/*======= Nav Icons =======*/
+nav ul li a::before {
+    float: left;
+    clear: both;
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+nav li:nth-child(1) a::before {
+  content: "\f05a";/*about*/
+  font-family: FontAwesome;
+}
+/**/
+nav li:nth-child(2) a::before{
+  content: "\f1ea";/*news*/
+  font-family: FontAwesome;
+}
+
+nav li:nth-child(3) a::before {
+  content: "\f073";/*events*/
+  font-family: FontAwesome;
+}
+
+nav li:nth-child(4) a::before {
+  content: "\f1b3";/*package*/
+  font-family: FontAwesome;
+}
+
+
+nav li:nth-child(5) a::before {
+  content: "\f207";/*tours*/
+  font-family: FontAwesome;
+}
+
+
+nav li a[href="contact.html"]::before {
+  content: "\f095";/*contact*/
+  font-family: FontAwesome;
+}
+
+/*======= Nav Icons =======*/
+
+#navbar {
+  width: 20%;
+  min-height: 500px;
+  height: 604px;
+  float: right;
+  clear: both;
+  background-color: #333;
+}
+
+#navbar h4 {
+  color: #fff;
+  padding: 60px 0 15px 40px;
+  text-transform: uppercase;
+}
+
+#navbar ul {
+    padding: 0 20px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+#navbar ul li a::before {
+    content: "\f1db";
+    font-family: FontAwesome;
+    color: #B76EB8;
+    padding-right: 15px;
+    font-size: 11px;
+}
+
+#navbar ul li a:hover::before{
+  content: "\f111";
+  font-family: FontAwesome;
+  color: aqua;
+}
+
+#navbar ul li a:focus{
+  border:1px solid cornflowerblue;
+  border-radius: 3px;
+
+}
+
+aside {
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  background: #fff;
+  padding: 0 0 3em;
+  height: 250px;
+}
+
+aside h2 {
+  padding: 40px;
+  background: #efefef;
+  text-transform: uppercase;
+}
+aside *{
+  padding:10px 20px;
+}
+
+#company-profile{
+  float: right;
+  width: 80%;
+}
+
+#company-profile a{
+  color: aqua;
+  text-decoration: none;
+}
+
+article iframe {
+  width: 100%;
+  clear: both;
+  height: 474px;
+}
+
+.i4ewOd-pzNkMb-haAclf {
+    background: #333 !important;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+footer ol{padding: 40px;}
+
+footer ol li{
+  display: inline;
+}
+
+footer ol li a{
+  color:#fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+footer span.company-name{
+  display: block;
+  background-color: #121212;
+  color:#fff;
+  padding: 20px;
+}
+
+/*end end end*/
+
+.header-container{
+  width: 100%;
+  max-width: 74.063em !important;
+  margin: 0 auto;
+}
+
+#site-nav {
+    float: right;
+    padding: 0 20px;
+}
+
+#site-nav ul li{
+    float: left;
+}
+
+#site-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    float: left;
+}
+
+#site-nav ul li ul {
+    display: none;
+}
+
+.headings{
+  padding: 60px 0;
+  width: 60%;
+  max-width: 970px;
+  margin: 5em auto;
+  text-align: center;
+  color:#fff;
+}
+.headings h1{
+  font-size: 4.4375em;
+  line-height: 1;
+  padding: 0 0 0.5625em /* 9px */;
+  margin-top: .75em;
+}
+.headings h2{font-size: 1.7em;}
+
+/*======= Section =======*/
+
+#company-profile{
+  height: 474px;
+  padding-top: 130px;
+  background-image: url(../images/light-love-clouds-river.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  color:#fff;
+  overflow: hidden;
+}
+.section-container {
+  float: left;
+  padding-left: 190px;
+}
+
+.section-container h2,
+.our-mission h2,
+.our-vision h2{
+  font-size: 40px;
+  /*padding-bottom: 20px;*/
+}
+
+main h2::after {
+  max-width: 300px;
+  margin: .3em 0;
+  height: 1px;
+  display: block;
+  content: "";
+  background-color: #fff;
+}
+
+.section-container p,
+.our-mission p,
+.our-vision p{
+  max-width: 385px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.our-mission,
+.our-vision{
+  float: left;
+  padding:40px 0;
+  height: 470px;
+}
+
+.our-mission > div,
+.our-vision > div{padding: 0 20px;}
+
+.our-mission > div{text-align: center;}
+
+.our-vision > div{
+    float: right;
+    padding-top: 90px;
+    padding-right: 190px;
+}
+
+.our-mission h2::after{margin:.3em auto;}
+
+.our-mission p{margin:0 auto;}
+
+.our-mission{
+  width: 35%;
+  color:#fff;
+  background-color: #333;
+}
+
+.our-vision{
+  width: 65%;
+  background-image: url(../images/fisherman-239487_1920.png);
+  background-color: #1176bc;
+  color: #fff;
+}
+
+/*======= Media Queries =======*/
+
+@media only screen and (max-width: 960px){
+
+  header h1{font-size: 3.4375em;}
+
+  nav{padding: 40px 0; top: -80px;}
+
+  nav ul{
+    display: none;
+  }
+
+  div#navbar {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  main{overflow: hidden;}
+  
+  .section-container h2, .our-mission h2, .our-vision h2{font-size: 32px;}
+  .section-container p, .our-mission p, .our-vision p{font-size: 14px; }
+
+  
+  /* section */
+  #company-profile,
+  .section-container {
+    padding: 40px 20px;
+  }
+
+  #company-profile, 
+  .our-mission, 
+  .our-vision, 
+  .our-vision > div {
+    width: auto;
+    height: auto;
+    float: none;
+  }
+
+  #company-profile,
+  .our-vision{
+    min-height: 385px;
+  }
+
+  #company-profile > div,
+  .our-vision > div{
+    max-width: 385px;
+    margin:0 auto;
+    float: none;
+    padding: 100px 20px;
+  }
+
+  .section-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  header h1{
+    font-size: 2.4375em;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  /* header */
+  header{
+    max-height: 570px;
+  }
+
+  header h1{
+    padding: 150px 0;
+  }
+
+  /* footer */
+}
+
+
+
+/*@media only screen and (max-width: 480px){
+  /* header */
+
+  /* section */
+
+  /* footer */
+/*}*/
