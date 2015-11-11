@@ -106,85 +106,91 @@ date:		Tuesday, November 17, 2015
 			<main>	<!-- MAIN SECTION (CENTER COLUMN) -->
     
 	<article>
-		<h2>Upcoming Events</h2>
-		<h3>Highlights of past and upcoming events. To see all events go to Calendar.</h3>
-		<a href="Calendar.html" id="calendar">
-        <img src="images/2015calendar.jpg" alt="2015 Calendar" width="450" height="450">
-		</a>
-		<a href="Calendar.html"><input type="submit" name="calendar" value="View Calendar >>">
-		</a>
-		<iframe src="https://www.psf.ca/what-we-do" width="455" height="315"
-            allowfullscreen frameborder="0">
-		</iframe>
-		<hr />
-		<ul>
-			<li><a href="#calendar">Today's Events</a></li>
-			<li><a href="#upcoming_events">Upcoming Events</a></li>
-			<li><a href="#video">Past Events</a></li>
-			<li><label>By Category: </label>
-				<select name="category" id="category">
-					<option value="community">Community & Recreation</option>
-					<option value="anniversary">20th Anniversary</option>
-					<option value="festivals">Festivals</option>
-				</select>
-			</li>
-		</ul>
+		<div>
+			<h2>Upcoming Events</h2>
+			<h3>Highlights of past and upcoming events. To see all events go to Calendar.</h3>
+			<a href="Calendar.html" id="calendar">
+	        <img src="images/2015calendar.jpg" alt="2015 Calendar" width="450" height="450">
+			</a>
+			<a href="Calendar.html"><input type="submit" name="calendar" value="View Calendar >>">
+			</a>
+			<iframe src="https://www.psf.ca/what-we-do" width="455" height="315"
+	            allowfullscreen frameborder="0">
+			</iframe>
+			<hr />
+			<ul>
+				<li><a href="#calendar">Today's Events</a></li>
+				<li><a href="#upcoming_events">Upcoming Events</a></li>
+				<li><a href="#video">Past Events</a></li>
+				<li><label>By Category: </label>
+					<select name="category" id="category">
+						<option value="community">Community & Recreation</option>
+						<option value="anniversary">20th Anniversary</option>
+						<option value="festivals">Festivals</option>
+					</select>
+				</li>
+			</ul>
+		</div>
 	</article>
 	
 	<article>
-		<video id="video" width="550" height="360" controls>
-			<source src="videos/PinkSalmon_2015.mp4" type="video/mp4" />
-			<source src="videos/PinkSalmon_2015.ogv" type="video/ogg" />
+		<div>
+			<video id="video" width="550" height="360" controls>
+				<source src="videos/PinkSalmon_2015.mp4" type="video/mp4" />
+				<source src="videos/PinkSalmon_2015.ogv" type="video/ogg" />
 
-        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
-                codebase="http://download.macromedia.com/pub/shockwave/
-                        cabs/flash/swflash.cab#version=6,0,40,0"
-                width="1100" height="720"
-                id="pink_salmon">
-            <param name="movie"
-                   value="videos/PinkSalmon_2015.swf" />
-            <param name="quality" value="high" />
-            <param name="bgcolor" value="#ffffff" />
-            <embed src="videos/PinkSalmon_2015.swf" quality="high" bgcolor="#ffffff"
-                   width="468" height="60"
-                   name="mymoviename" align="" type="application/x-shockwave-flash"
-                   pluginspage="http://www.macromedia.com/go/getflashplayer">
-            </embed>
-        </object>
-			<p>Video is not supported in your browser. Try the following links</p>
-		</video>
-	
-    <section itempscope itemtype="http://www.data-vocabulary.org/Event/">
+	        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+	                codebase="http://download.macromedia.com/pub/shockwave/
+	                        cabs/flash/swflash.cab#version=6,0,40,0"
+	                width="1100" height="720"
+	                id="pink_salmon">
+	            <param name="movie"
+	                   value="videos/PinkSalmon_2015.swf" />
+	            <param name="quality" value="high" />
+	            <param name="bgcolor" value="#ffffff" />
+	            <embed src="videos/PinkSalmon_2015.swf" quality="high" bgcolor="#ffffff"
+	                   width="468" height="60"
+	                   name="mymoviename" align="" type="application/x-shockwave-flash"
+	                   pluginspage="http://www.macromedia.com/go/getflashplayer">
+	            </embed>
+	        </object>
+				<p>Video is not supported in your browser. Try the following links</p>
+			</video>
+		
+	    <section itempscope itemtype="http://www.data-vocabulary.org/Event/">
+    	</div>
 	</article>
 	
 		<article>
-			<table id="upcoming_events">
-				<thead>
-				<tr>
-					<th>Event Date</th>
-					<th>Event Name</th>
-					<th>Description</th>
-				</tr>
-				</thead>
-				<tbody>
+			<div>
+				<table id="upcoming_events">
+					<thead>
 					<tr>
-						<th itemprop="startdate">October 09:</th>
-						<td itemprop="name">Come get your salmon on!</td>
-						<td itemprop="description">Come celebrate National Salmon Day with us!</td>
+						<th>Event Date</th>
+						<th>Event Name</th>
+						<th>Description</th>
 					</tr>
-					</li>
-					<tr>
-						<th itemprop="startdate">October 14:</th>
-						<td itemprop="name">Pink salmon festival</td>
-						<td itemprop="description">Rain or shine! Join us for a festival at Kit's Point.</td>
-					</tr>
-					<tr>
-						<th itemprop="startdate">October 25:</th>
-						<td itemprop="name">Salmon Come Home</td>
-						<td itemprop="description">Join City of Coquitlam to welcome the salmon home!</td>
-					</tr>
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						<tr>
+							<th itemprop="startdate">October 09:</th>
+							<td itemprop="name">Come get your salmon on!</td>
+							<td itemprop="description">Come celebrate National Salmon Day with us!</td>
+						</tr>
+						</li>
+						<tr>
+							<th itemprop="startdate">October 14:</th>
+							<td itemprop="name">Pink salmon festival</td>
+							<td itemprop="description">Rain or shine! Join us for a festival at Kit's Point.</td>
+						</tr>
+						<tr>
+							<th itemprop="startdate">October 25:</th>
+							<td itemprop="name">Salmon Come Home</td>
+							<td itemprop="description">Join City of Coquitlam to welcome the salmon home!</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</article>
 		
 	</main>

@@ -110,63 +110,67 @@ date:		Tuesday, November 17, 2015
 	<main>	<!-- MAIN SECTION (CENTER COLUMN) --> 
  
  		<article> 
- 		 <h6>Contact Us</h6> 
-            <form class="form" action="formmail.php" method="post" enctype="multipart/form-data"> 
-				<h5>We're here to help!</h5> 
-				<h5> Feel free to emails us with any questions or inquiries.</h5> 
-                </br></br> 
- 				<label for="name">Your Name:</label> 
- 				<input type="text"  
- 					name="name" 
- 					id="name" 	 
- 					maxlength="40"/><br /></br> 
- 
- 
-                 <label for="email">Your email address:</label> 
-                     <input type="text" 
- 						name="email" 
- 						id="email" 
- 						size="20" 
- 						maxlength="40" 
- 						class="required" 
-                         placeholder="hello.world@example.com"></br></br> 
-                  
-                 <label>What's your problem?</label> 
-                     <select name="category" id="category"> 
-                         <option value="subject">Subject: What can we do for you?</option> 
-                         <option value="partner">Partner with Get Your Salmon On!</option> 
-                         <option value="work">Work with Get Your Salmon On! </option> 
-                         <option value="media">Media Inquiry</option> 
-                         <option value="">Other</option> 
- 					</select> 
-				</br></br> 
-				
-				<label>Anything else you'd like to add?</label></br> 
- 				<textarea name="comments" 
- 					id="comments" 
- 					cols="30" rows="6"></textarea>		 
- 					<br />		 
- 				<input  type="submit"  
- 						value="submit" 
- 						class="submit_button" /> 
- 				<br />	 
- 				<input type="hidden" name="recipient" value="recipient_email@server.com" /> 
-            </form> 
+ 		<div>
+	 		 <h6>Contact Us</h6> 
+	            <form class="form" action="formmail.php" method="post" enctype="multipart/form-data"> 
+					<h5>We're here to help!</h5> 
+					<h5> Feel free to emails us with any questions or inquiries.</h5> 
+	                </br></br> 
+	 				<label for="name">Your Name:</label> 
+	 				<input type="text"  
+	 					name="name" 
+	 					id="name" 	 
+	 					maxlength="40"/><br /></br> 
+	 
+	 
+	                 <label for="email">Your email address:</label> 
+	                     <input type="text" 
+	 						name="email" 
+	 						id="email" 
+	 						size="20" 
+	 						maxlength="40" 
+	 						class="required" 
+	                         placeholder="hello.world@example.com"></br></br> 
+	                  
+	                 <label>What's your problem?</label> 
+	                     <select name="category" id="category"> 
+	                         <option value="subject">Subject: What can we do for you?</option> 
+	                         <option value="partner">Partner with Get Your Salmon On!</option> 
+	                         <option value="work">Work with Get Your Salmon On! </option> 
+	                         <option value="media">Media Inquiry</option> 
+	                         <option value="">Other</option> 
+	 					</select> 
+					</br></br> 
+					
+					<label>Anything else you'd like to add?</label></br> 
+	 				<textarea name="comments" 
+	 					id="comments" 
+	 					cols="30" rows="6"></textarea>		 
+	 					<br />		 
+	 				<input  type="submit"  
+	 						value="submit" 
+	 						class="submit_button" /> 
+	 				<br />	 
+	 				<input type="hidden" name="recipient" value="recipient_email@server.com" /> 
+	            </form> 
+            </div>
  			</article> 
  			 
  			<article> 
-				<dl> 
-					<dt itemprop="company_name"><strong>Get Your Salmon On!</strong></dt>
-					<dd itemprop="address" itemscope itemtype="http://www.data-vocabulary.org/Address/">
-						<span itemprop="street-address"> 555 Seymour Street, </span><br />
-						<span itemprop="locality">Vancouver, BC</span>
-					</dd>
-                 <span itemprop="postal-code">V6B 3H6</span>
-                 <span itemprop="country-name">Canada</span>
-                 <dd itemprop="tel">(604) 415-3576</dd>
-					<p><a href="mailto:getyour@salmon-on.com">getyour@salmon-on.com</a>
-					</p>
-				</dl>
+ 				<div>
+					<dl> 
+						<dt itemprop="company_name"><strong>Get Your Salmon On!</strong></dt>
+						<dd itemprop="address" itemscope itemtype="http://www.data-vocabulary.org/Address/">
+							<span itemprop="street-address"> 555 Seymour Street, </span><br />
+							<span itemprop="locality">Vancouver, BC</span>
+						</dd>
+	                 <span itemprop="postal-code">V6B 3H6</span>
+	                 <span itemprop="country-name">Canada</span>
+	                 <dd itemprop="tel">(604) 415-3576</dd>
+						<p><a href="mailto:getyour@salmon-on.com">getyour@salmon-on.com</a>
+						</p>
+					</dl>
+				</div>
  			</article>
  
 	</main>

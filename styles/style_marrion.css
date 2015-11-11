@@ -342,11 +342,6 @@ article{
   padding: 100px 0;
 }
 
-article#company-profile,
-article.our-mission,
-article.our-vision,
-article.find-us{padding: 0};
-
 article:nth-child(odd){
   background: #939393;
 }
@@ -355,10 +350,15 @@ article:nth-child(even){
   background: #696969;
 }
 
+article#company-profile,
+article.our-mission,
+article.our-vision,
+article.find-us{padding: 0};
+
 article.find-us{
   clear:both;
   overflow: hidden;
-  background-color: #2a2a2a;
+  background: #2a2a2a;
 }
 
 article.find-us h2 {
@@ -377,6 +377,18 @@ article.find-us h2::before {
   width: 100%;
   font-size: 70px;
   padding-bottom: 20px;
+}
+
+article#company-profile h2::after,
+article.our-mission h2::after,
+article.our-vision h2::after,
+article.find-us h2::after {
+  max-width: 300px;
+  margin: .3em 0;
+  height: 1px;
+  display: block;
+  content: "";
+  background-color: #fff;
 }
 
 main article:nth-child(4) h2::after{margin: .3em auto;}
@@ -416,15 +428,6 @@ article#company-profile{
 .our-vision h2{
   font-size: 40px;
   /*padding-bottom: 20px;*/
-}
-
-main h2::after {
-  max-width: 300px;
-  margin: .3em 0;
-  height: 1px;
-  display: block;
-  content: "";
-  background-color: #fff;
 }
 
 .section-container p,
@@ -475,12 +478,6 @@ article.our-vision{
 /*------- *News Page Styles -------*/
 
 
-
-/*#fish-rankings *,
-#salmon-rides *,
-#mailing-list *,
-#websters-dictionary *,
-#salmon-population-2015 *{padding: 0 20px;}*/
 
 /*------- *News Page Styles End $$$ -------*/
 
