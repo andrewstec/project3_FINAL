@@ -280,7 +280,7 @@ nav li a[href="contact.html"]::before {
   height: 604px;
   float: right;
   clear: both;
-  background-color: #333;
+  background-color: #2a2a2a;
 }
 
 #navbar h4 {
@@ -433,7 +433,7 @@ article.find-us iframe {
 }
 
 main article:nth-child(1){
-  height: 474px;
+  min-height: 474px;
   padding-top: 130px;
   background-size:cover;
   background-repeat: no-repeat;
@@ -550,6 +550,33 @@ article#fish-rankings > div a{
 }
 
 /*------- *News Page Styles End $$$ -------*/
+
+/*------- *Events Page Styles -------*/
+
+hr{border:none;}
+
+article#events-article{
+  height: auto;
+  padding:40px 0 100px;
+}
+
+article#events-article > div{max-width:100%;}
+
+a#calendar img,
+iframe[src="https://www.psf.ca/what-we-do"]{
+  width: 100%;
+}
+
+a#calendar + a{
+  float: left;
+  padding: 20px;
+  margin: 10px 0 30px;
+  background: black;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/*------- *Events Page Styles End $$$ -------*/
 
 /*======= *MAIN STYLES END $$$ =======*/
 
