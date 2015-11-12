@@ -127,9 +127,9 @@ header input[type="submit"]{
   color:#fff;
 }
 
-header a{text-decoration: none; color:#fff;}
+header a{text-decoration: none; color:rgba(0,0,0,.5);}
 
-#shopping-cart{color:#fff;}
+#shopping-cart{color:rgba(0,0,0,.5);}
 
 #shopping-cart img{position: relative; top:-8px;}
 
@@ -585,6 +585,7 @@ article#events-article a#calendar + a{
   background: black;
   color: #fff;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 article#events-article ul{padding: 0;}
