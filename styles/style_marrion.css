@@ -129,7 +129,7 @@ header input[type="submit"]{
 
 header a{text-decoration: none; color:#fff;}
 
-#shopping-cart{color:red;}
+#shopping-cart{color:#fff;}
 
 #shopping-cart img{position: relative; top:-8px;}
 
@@ -562,12 +562,15 @@ hr{border:none;}
 article#events-article{
   height: auto;
   padding:40px 0;
-  color: #fff;
+  color: #444;
+  background-color: #fff;
 }
 
 article#events-article select{color: #333;}
 
 article#events-article > div{max-width:100%;}
+
+article#events-article > div h2 + h3{padding-bottom: 30px;}
 
 a#calendar img,
 iframe[src="https://www.psf.ca/what-we-do"]{
@@ -575,7 +578,7 @@ iframe[src="https://www.psf.ca/what-we-do"]{
 }
 iframe[src="https://www.psf.ca/what-we-do"]{min-height: 500px;}
 
-a#calendar + a{
+article#events-article a#calendar + a{
   float: left;
   padding: 20px;
   margin: 10px 0 30px;
@@ -602,7 +605,7 @@ article#events-article li:last-of-type::after{
   content: " ";
 }
 
-article#events-article a{color: #fff;}
+article#events-article a{color: #444; text-decoration: underline;}
 
 #pink-salmon > div{text-align: center;}
 /*------- *Events Page Styles End $$$ -------*/
