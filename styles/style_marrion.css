@@ -557,8 +557,11 @@ hr{border:none;}
 
 article#events-article{
   height: auto;
-  padding:40px 0 100px;
+  padding:40px 0;
+  color: #fff;
 }
+
+article#events-article select{color: #333;}
 
 article#events-article > div{max-width:100%;}
 
@@ -566,6 +569,7 @@ a#calendar img,
 iframe[src="https://www.psf.ca/what-we-do"]{
   width: 100%;
 }
+iframe[src="https://www.psf.ca/what-we-do"]{min-height: 500px;}
 
 a#calendar + a{
   float: left;
@@ -576,6 +580,27 @@ a#calendar + a{
   border-radius: 3px;
 }
 
+article#events-article ul{padding: 0;}
+
+article#events-article li{
+  line-height: 1.4;
+  float: left;
+  padding: 20px 10px 0;
+}
+
+article#events-article li::after{
+  content: "|";
+  position: relative;
+  left: 12px;
+}
+
+article#events-article li:last-of-type::after{
+  content: " ";
+}
+
+article#events-article a{color: #fff;}
+
+#pink-salmon > div{text-align: center;}
 /*------- *Events Page Styles End $$$ -------*/
 
 /*======= *MAIN STYLES END $$$ =======*/
