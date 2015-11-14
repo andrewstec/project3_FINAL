@@ -357,7 +357,8 @@ aside *{
 
 /*------- *About Page Styles -------*/
 
-article{
+article,
+article#article_contact{
   color:#fff;
   padding: 100px 0;
 }
@@ -370,13 +371,16 @@ article:nth-child(even){
   background: #696969;
 }
 
-article > div p {
-    line-height: 1.5;
-}
+article#article_contact + article > div{text-align: center;}
+
 article > div{
   max-width: 50%; 
   margin: 0 auto;
   /*text-align: center;*/
+}
+
+article > div p {
+    line-height: 1.5;
 }
 
 article#company-profile,
@@ -496,8 +500,7 @@ article > div h2 {
 
 article.our-mission > div{text-align: center; padding: 20px 0;}
 
-article.our-mission > div,
-article.our-vision > div{
+article.our-mission > div{
   max-width: 100%;
 }
 
@@ -631,6 +634,23 @@ iframe[src="https://www.youtube.com/embed/eUvaHpWCNbQ"]{
   width: 100%;
 }
 
+form.form input,
+form.form textarea,
+form.form select{color: #000;}
+
+form.form input{
+  line-height: normal;
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+}
+
+legend h3{padding: 20px 0;}
+
+article:nth-child(1) form.form label {
+    display: table-cell;
+}
+
 /*------- *Packages Page Styles End $$$ -------*/
 
 /*======= *MAIN STYLES END $$$ =======*/
@@ -662,6 +682,7 @@ footer span.company-name{
   background-color: #121212;
   color:#fff;
   padding: 20px;
+  font-size: 13px;
 }
 
 /*======= *FOOTER STYLES END $$$ =======*/
@@ -713,14 +734,26 @@ footer span.company-name{
     min-height: 385px;
   }
 
+  article.our-mission, 
+  article.our-vision{
+    float: none;
+    width: 100%;
+  } 
+
   #company-profile > div,
   main article:nth-child(1) > div,
   .our-vision > div{
     max-width: 385px;
     margin:0 auto;
     float: none;
-    padding: 100px 20px;
+    padding: 100px 0;
     overflow: hidden;
+  }
+
+  article.our-mission > div, 
+  article.our-vision > div{
+    padding: 100px 20px;
+    float: none;
   }
 
   .section-container {
@@ -735,13 +768,41 @@ footer span.company-name{
     padding: 0 20px;
     float: none;
     max-width: 100%;
+    text-align: left;
   }
+
+  article > div p{text-align: left;}
 
   div video{max-width: 100%; height: auto;}
 
   th, td{
     display: block;
   }
+
+  iframe[src="https://www.youtube.com/embed/eUvaHpWCNbQ"]{height: auto;}
+}
+
+@media only screen and (max-width:500px){
+
+  main article:nth-child(1){
+    padding: 100px 0;
+  }
+
+  article#company-profile > div{padding: 0 20px;}
+
+  main article:nth-child(1) > div{padding: 0 20px;}
+
+  form.form label{
+    display: table-cell;
+    padding: 10px 0;
+  }
+
+  form.form *,
+  form.form input[type="text"]{
+    width: 100%;
+  }
+
+  form.form input[type="radio"]{width: auto;}
 }
 
 @media only screen and (max-width:350px){
@@ -773,9 +834,6 @@ footer span.company-name{
   #navbar ul li a{font-size:13px;}
 
   /*section*/
-
-  article#company-profile,
-  main article:nth-child(1){padding-top: 0;}
 
   main article:nth-child(2),
   article.our-vision {
