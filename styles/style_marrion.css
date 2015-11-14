@@ -94,7 +94,7 @@ header{
 }
 
 header h1{
-  font-size: 3.4375em;
+  font-size: 39px;
   text-transform: uppercase;
   line-height: 1;
   padding: 0 0 0.5625em;
@@ -129,9 +129,15 @@ header input[type="submit"]{
 
 header a{text-decoration: none; color:rgba(0,0,0,.5);}
 
-#shopping-cart{color:rgba(0,0,0,.5);}
+#shopping-cart{color:rgba(250,250,250,.9);}
 
-#shopping-cart img{position: relative; top:-8px;}
+#shopping-cart img {
+    position: relative;
+    top: 0px;
+    padding: 10px;
+    background: rgba(255,255,255,.4);
+    border-radius: 5px;
+}
 
 .header-container{
   width: 100%;
@@ -402,8 +408,7 @@ article.find-us h2::before {
   float: left;
   clear: both;
   width: 100%;
-  font-size: 70px;
-  padding-bottom: 20px;
+  font-size: 50px;
 }
 
 article#company-profile h2::after,
@@ -606,7 +611,7 @@ article#events-article li:last-of-type::after{
   content: " ";
 }
 
-article#events-article a{color: #444; text-decoration: underline;}
+article#events-article a{color: #444; text-decoration: underline; font-size: 13px;}
 
 #pink-salmon > div{text-align: center;}
 /*------- *Events Page Styles End $$$ -------*/
@@ -666,8 +671,6 @@ footer span.company-name{
 
 @media only screen and (max-width: 960px){
 
-  header h1{font-size: 3.4375em;}
-
   nav{padding: 40px 0; top: -80px;}
 
   nav ul{
@@ -689,11 +692,13 @@ footer span.company-name{
   
   /* section */
   #company-profile,
+  main article:nth-child(1),
   .section-container {
     padding: 40px 20px;
   }
 
-  #company-profile, 
+  #company-profile,
+  main article:nth-child(1), 
   .our-mission, 
   .our-vision, 
   .our-vision > div {
@@ -703,16 +708,19 @@ footer span.company-name{
   }
 
   #company-profile,
+  main article:nth-child(1),
   .our-vision{
     min-height: 385px;
   }
 
   #company-profile > div,
+  main article:nth-child(1) > div,
   .our-vision > div{
     max-width: 385px;
     margin:0 auto;
     float: none;
     padding: 100px 20px;
+    overflow: hidden;
   }
 
   .section-container {
@@ -722,31 +730,87 @@ footer span.company-name{
   }
 }
 
-@media only screen and (max-width: 580px){
-  header h1{
-    font-size: 2.4375em;
+@media only screen and (max-width:700px){
+  article > div {
+    padding: 0 20px;
+    float: none;
+    max-width: 100%;
+  }
+
+  div video{max-width: 100%; height: auto;}
+
+  th, td{
+    display: block;
   }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width:350px){
   /* header */
   header{
     max-height: 570px;
   }
 
-  header h1{
-    padding: 150px 0;
+  img#logo {
+    padding-top: 85px;
   }
 
-  /* footer */
+  header h1{
+    padding: 0 0 15px;
+  }
+
+  header input[type="search"]{
+    width: 57%;
+    max-width: 250px;
+  }
+
+  header form {
+    width: auto;
+    margin: 25px 10px;
+    padding: 10px 0px;
+    max-width: 350px;
 }
 
+  #navbar ul li a{font-size:13px;}
 
+  /*section*/
 
-/*@media only screen and (max-width: 480px){
-  /* header */
+  article#company-profile,
+  main article:nth-child(1){padding-top: 0;}
 
-  /* section */
+  main article:nth-child(2),
+  article.our-vision {
+      clear: both;
+      float: none;
+      width: 100%;
+  }
+
+  #company-profile, 
+  main article:nth-child(1),
+  .our-vision{
+      height: auto;
+      overflow: hidden;
+  }
+
+  article.our-mission > div, 
+  article.our-vision > div {
+      max-width: 100%;
+      padding: 100px 20px;
+  }
+
+  article.find-us h2{
+    font-size: 28px;
+  }
+
+  article#salmon-rides, 
+  article#mailing-list {
+    text-align: left;
+}
 
   /* footer */
-/*}*/
+  footer ol li a{padding: 0 5px;}
+
+  footer span.company-name{font-size: 13px;}
+}
+
+}
+
