@@ -187,6 +187,17 @@ nav {
   width: 100%;
 }
 
+.sticky{
+  position: fixed;
+  top: 0;
+  background-color: #121212;
+  z-index: 999999999;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
 nav::before {
   content: "GYSO";
   position: absolute;
