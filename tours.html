@@ -11,20 +11,15 @@ date:		Tuesday, November 17, 2015
 	<meta name="authors" content="Marrion Nzuziluaka, Andrew Stec, Emma Vilataj, Hassan Hosseinpoor, and Kully Pawa">
 	<meta name="keywords" content="salmon, fish, Vancouver, Capilano, about">
     <meta name="description" content="Get your Salmon On! is an American tour operator that operates in the Metro Vancouver Capilano area.">
-	<link rel="stylesheet" href="styles/normalize.css">
-	
-	<!-- marrion css -->
-	<link rel="stylesheet" type="text/css" href="styles/style_marrion.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- marrion css -->
+	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header> <!-- HEADER -->
 		<a href="about-us.html"><img src="images/logo.png" alt="Get Your Salmon On! Logo" id="logo"/></a>
-		<h1><a href="about-us.html">Get Your Salmon On!</a></h1>
+		<a href="about-us.html"><h1>Get Your Salmon On!</h1></a>
 		<a id="top"></a>
 		<a id="shopping-cart" href="about-us.html">View Cart <img src="images/shopping-cart.png" alt="View Shopping Cart"/></a>
 		<form class="search_bar" action="#" method="get">
@@ -63,18 +58,19 @@ date:		Tuesday, November 17, 2015
 		
     <div class="container">
  
-	<aside>   <!-- NEWS (RIGHT-HAND) BAR -->
-		<h2>News Updates</h2>
-		<div>
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Final Project complete and available for evaluation.</a>
-					<br />
-					<br />
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
-					<br />
-					<br />
-					<hr />
+				<aside>  <!-- NEWS (RIGHT-HAND) BAR -->
+					<h2>News Updates</h2>
+					
+	<div>				
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Final Project complete and available for evaluation.</a>
+						<br />
+						<br />
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
+						<br />
+						<br />
+						<hr />
 				<form class="login" action="#">
 					<ul>
 						<li>
@@ -104,96 +100,91 @@ date:		Tuesday, November 17, 2015
 						</li>
 					</ul>
 				</form>
-			</div>
-	</aside>
+				
+	</div>
+				</aside>
 			
 	<main>	<!-- MAIN SECTION (CENTER COLUMN) -->
 				
 		<article>
-			<div>
-				<h2>Tours</h2>
-					<p>Ever since 2010, <em>Get your Salmon On!</em> has been providing a one-of-a-kind
-					tour experience to educate the world about maintaing fish stocks for future generations.
-					This unique approach to advocating for the preservation of the marine ecosystem through
-					recreational and educational tours has made <em>Get your Salmon On!</em> a recognized tour
-					operator in the Lower Mainland.</p>
-			</div>
+			<h2>Tours</h2>
+				<p>Ever since 2010, <em>Get your Salmon On!</em> has been providing a one-of-a-kind
+				tour experience to educate the world about maintaing fish stocks for future generations.
+				This unique approach to advocating for the preservation of the marine ecosystem through
+				recreational and educational tours has made <em>Get your Salmon On!</em> a recognized tour
+				operator in the Lower Mainland.</p>
 		</article>	
 
 		<article>
-			<div>
-				<h3>Recreational Tours</h3>
-					<p>Are you...(please check all that apply)</p>
-					<label><input type="checkbox" checked> An individual<br>
-							<input type="checkbox" checked> A small group<br>
-							<input type="checkbox" checked> Interested in an more intense tour<br></label>
-					<p>Then the recreational tour is for you! Our unqiue recreational tours are more focused on
-					an entertainment while at the same time advocating the preservation of the marine ecosystem.</p>
-						
-					<p><a href="recreational-tours.html" target="_blank">Click here</a> to learn more about our
-					unique recreational tours!</p>
-				</div>
+			<h3>Recreational Tours</h3>
+				<p>Are you...(please check all that apply)</p>
+				<label><input type="checkbox" checked> An individual<br>
+						<input type="checkbox" checked> A small group<br>
+						<input type="checkbox" checked> Interested in an more intense tour<br></label>
+				<p>Then the recreational tour is for you! Our unqiue recreational tours are more focused on
+				an entertainment while at the same time advocating the preservation of the marine ecosystem.</p>
+					
+				<p><a href="recreational-tours.html" target="_blank">Click here</a> to learn more about our
+				unique recreational tours!</p>
 		</article>
 			
 		<article>
-			<div>
-	            <h3>Educational Tours</h3>
-					<p>Are you...</p>
-	                <ul>
-	                    <li>traveling with your school</li>
-	                    <li>seeking to learn more</li>
-	                    <li>interested in science</li>
-	                </ul>
-	                
-					<p>If any of those describes you, then our educational tours is just the ones for you! Our
-					educational tours are aimed towards audiences who wish to gain further understanding through
-					science programs.</p>
+            <h3>Educational Tours</h3>
+				<p>Are you...</p>
+                <ul>
+                    <li>traveling with your school</li>
+                    <li>seeking to learn more</li>
+                    <li>interested in science</li>
+                </ul>
+                
+				<p>If any of those describes you, then our educational tours is just the ones for you! Our
+				educational tours are aimed towards audiences who wish to gain further understanding through
+				science programs.</p>
 
-	            <form class="form" action="formmail.php" method="post" enctype="multipart/form-data">
-	                <fieldset>
-	                    <legend><h3>Feedback</h3></legend>
-							<label for="firstname">First Name:</label>
-								<input type="text" 
-									name="firstname"
-									id="firstname" 	
-									size="40" />
-									<br><br>
-							<label for="lastname">Last Name:</label>
-								<input 	type="text"
-									name="lastname"
-									id="lastname"
-									size="40" />
-							</label>
+            <form class="form" action="formmail.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend><h3>Feedback</h3></legend>
+						<label for="firstname">First Name:</label>
+							<input type="text" 
+								name="firstname"
+								id="firstname" 	
+								size="40" />
 								<br><br>
-							<label for="gender">Your Gender:</label>
-								<input type="radio"
-										name="gender"
-										id="male"> Male
-								<input type="radio"
-										name="gender"
-										id="female"> Female
-								<br><br>
-							<label for="b-day">Your Date of Birth:</label>
-								<input type="date" name="b-day">
-								<br><br>
-							<h3>Comment:</h3>
-							<textarea 	name="comment"
-									id="comments"
-									cols="60"
-									rows="5">Your comment...
-							</textarea>
-								<br><br>
-							<input  name="submit"
-									type="submit" 
-									value="submit"
-									class="submit_button" />
-								<br />
-							<input type="hidden"
-									name="recipient"
-									value="recipient_email@server.com" />
-	                </fieldset>
-	            </form>
-            </div>
+						<label for="lastname">Last Name:</label>
+							<input 	type="text"
+								name="lastname"
+								id="lastname"
+								size="40" />
+						</label>
+							<br><br>
+						<label for="gender">Your Gender:</label>
+							<input type="radio"
+									name="gender"
+									id="male"> Male
+							<input type="radio"
+									name="gender"
+									id="female"> Female
+							<br><br>
+						<label for="b-day">Your Date of Birth:</label>
+							<input type="date" name="b-day">
+							<br><br>
+						<h3>Comment:</h3>
+						<textarea 	name="comment"
+								id="comments"
+								cols="60"
+								rows="5">Your comment...
+						</textarea>
+							<br><br>
+						<input  name="submit"
+								type="submit" 
+								value="submit"
+								class="submit_button" />
+							<br />
+						<input type="hidden"
+								name="recipient"
+								value="recipient_email@server.com" />
+                </fieldset>
+            </form>
 		</article>
 
 	</main>
