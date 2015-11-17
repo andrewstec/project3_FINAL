@@ -7,27 +7,20 @@ date:		Tuesday, November 17, 2015
 
 <head>
 	<meta charset="utf-8">
-	<title>Get Your Salmon On! - Contact Us</title>
+	<title>Get Your Salmon On! - About Us</title>
 	<meta name="authors" content="Marrion Nzuziluaka, Andrew Stec, Emma Vilataj, Hassan Hosseinpoor, and Kully Pawa">
 	<meta name="keywords" content="salmon, fish, Vancouver, Capilano, about">
     <meta name="description" content="Get your Salmon On! is an American tour operator that operates in the Metro Vancouver Capilano area.">
-	<link rel="stylesheet" href="styles/normalize.css">
-	
-	<!-- marrion css -->
-	<link rel="stylesheet" type="text/css" href="styles/style_marrion.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- marrion css -->
+	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400" rel="stylesheet" type="text/css">
-	
 </head>
 
 <body>
     <header> <!-- HEADER -->
 		<a href="about-us.html"><img src="images/logo.png" alt="Get Your Salmon On! Logo" id="logo"/></a>
-		<h1><a href="about-us.html">Get Your Salmon On!</a></h1>
+		<a href="about-us.html"><h1>Get Your Salmon On!</h1></a>
 		<a id="top"></a>
-		<a id="shopping-cart" href="about-us.html">View Cart <img src="images/shopping-cart.png" alt="View Shopping Cart"/></a>		
+				<a id="shopping-cart" href="about-us.html">View Cart <img src="images/shopping-cart.png" alt="View Shopping Cart"/></a>
 		<form class="search_bar" action="#" method="get">
             <input type="search" id="search_text" name="search" placeholder="search..." size="22" maxlength="120">
             <input type="submit" id=search_submit value="search">
@@ -37,12 +30,12 @@ date:		Tuesday, November 17, 2015
     <div class="wrapper">
         <nav>
 			<ul>  <!-- TOP MENU BAR -->
-				<li class="menu_button"><a href="about-us.html">About Us</a></li>
+				<li class="current_menu_item"><a href="#top">About Us</a></li>
 				<li class="menu_button"><a href="news.html">News</a></li>
 				<li class="menu_button"><a href="events.html">Events</a></li>
 				<li class="menu_button"><a href="packages.html">Packages</a></li>
 				<li class="menu_button"><a href="tours.html">Tours</a></li>
-				<li class="current_menu_item"><a href="#top">Contact</a></li>
+				<li class="menu_button"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 	<div id="menu_bar"></div>
@@ -65,18 +58,19 @@ date:		Tuesday, November 17, 2015
 		
     <div class="container">
             
-				<aside>   <!-- NEWS (RIGHT-HAND) BAR -->
-				<h2>News Updates</h2>
-		<div>
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Final Project complete and available for evaluation.</a>
-					<br />
-					<br />
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
-					<br />
-					<br />
-					<hr />
+				<aside>  <!-- NEWS (RIGHT-HAND) BAR -->
+					<h2>News Updates</h2>
+					
+	<div>				
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Final Project complete and available for evaluation.</a>
+						<br />
+						<br />
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
+						<br />
+						<br />
+						<hr />
 				<form class="login" action="#">
 					<ul>
 						<li>
@@ -106,126 +100,96 @@ date:		Tuesday, November 17, 2015
 						</li>
 					</ul>
 				</form>
-			</div>
-	</aside>	
- 
-	<main>	<!-- MAIN SECTION (CENTER COLUMN) --> 
- 
- 		<article id="article_contact"> 
- 		<div>
-	 		 <h6>Contact Us</h6> 
-	            <form class="form" action="formmail.php" method="post" enctype="multipart/form-data"> 
-					<h5>We're here to help!</h5> 
-					<h5> Feel free to emails us with any questions or inquiries.</h5> 
-	                </br></br> 
-	 				<label for="name">Your Name:</label> 
-	 				<input type="text"  
-	 					name="name" 
-	 					id="name" 	 
-	 					maxlength="40"/><br /></br> 
-	 
-	 
-	                 <label for="email">Your email address:</label> 
-	                     <input type="text" 
-	 						name="email" 
-	 						id="email" 
-	 						size="20" 
-	 						maxlength="40" 
-	 						class="required" 
-	                         placeholder="hello.world@example.com"></br></br> 
-	                  
-	                 <label>What's your problem?</label> 
-	                     <select name="category" id="category"> 
-	                         <option value="subject">Subject: What can we do for you?</option> 
-	                         <option value="partner">Partner with Get Your Salmon On!</option> 
-	                         <option value="work">Work with Get Your Salmon On! </option> 
-	                         <option value="media">Media Inquiry</option> 
-	                         <option value="">Other</option> 
-	 					</select> 
-					</br></br> 
-					
-					<label>Anything else you'd like to add?</label></br> 
-	 				<textarea name="comments" 
-	 					id="comments" 
-	 					cols="30" rows="6"></textarea>		 
-	 					<br />		 
-	 				<input  type="submit"  
-	 						value="submit" 
-	 						class="submit_button" /> 
-	 				<br />	 
-	 				<input type="hidden" name="recipient" value="recipient_email@server.com" /> 
-	            </form> 
-            </div>
- 			</article> 
- 			 
- 			<article> 
- 				<div>
-					<dl> 
-						<dt itemprop="company_name"><strong>Get Your Salmon On!</strong></dt>
-						<dd itemprop="address" itemscope itemtype="http://www.data-vocabulary.org/Address/">
-							<span itemprop="street-address"> 555 Seymour Street, </span><br />
-							<span itemprop="locality">Vancouver, BC</span>
-						</dd>
-	                 <span itemprop="postal-code">V6B 3H6</span>
-	                 <span itemprop="country-name">Canada</span>
-	                 <dd itemprop="tel">(604) 415-3576</dd>
-						<p><a href="mailto:getyour@salmon-on.com">getyour@salmon-on.com</a>
-						</p>
-					</dl>
-				</div>
- 			</article>
- 
-	</main>
-
-	</div>  <!-- container ends -->
-	</div> <!-- column_container_navbar ends -->
-	</div> <!-- column_container_content ends -->
-	</div>  <!-- wrapper ends -->
+				
+	</div>
+				</aside>
 			
-	<footer> <!-- FOOTER MENU ITEMS -->
-		<ol id="social_media"><!-- SOCIAL MEDIA BUTTONS -->
-			<li class="social_media_button"><a href="404error_page.html" target="_blank">
-				<img src="images/button_ln.png" alt="linkedin" id="linkedin"
+			<main>	<!-- MAIN SECTION (CENTER COLUMN) -->
+            <article>
+                <h2>Company Profile</h2>
+                <p>
+                    Get Your Salmon On! is an American tour operator that operates in the
+					<a href="#location">Metro Vancouver Capilano area</a>. They have earned a reputation for satisfying the
+					needs of travelers, locals and educators with an appreciation for the marine ecosystem.
+                </p>
+                
+            </article>
+            
+			<article>
+                <h2>Our Mission</h2>
+                <p>
+                    To provide our client's with unforgettable, enjoyable experiences that exceed their expectations
+                    while educating them about the fish habitat and how to protect it.
+                </p>
+            </article>
+
+            <article>
+                <h2>Our Vision</h2>
+                <p>
+                    A one-of-a-kind tourism company that is recognized for their professionalism, high quality service and
+                    environmental advocacy with the main purpose of contributing to salmon fish habitat restoration projects.
+                </p>
+            </article>
+
+            <article>
+                <h2>Where To Find Us:</h2>
+				    <div class="iframe-container">
+					<iframe class="map" width="250" height="250"
+                        src="https://mapsengine.google.com/map/embed?z=10&amp;mid=zp2EYy76hju4.k1595PKAacXE">
+					</iframe>
+					</div>
+				
+			</article>
+
+			</main>
+        </div>  <!-- container ends -->
+		</div> <!-- column_container_navbar ends -->
+		</div> <!-- column_container_content ends -->
+		</div>  <!-- wrapper ends -->
+			
+		<footer> <!-- FOOTER MENU ITEMS -->
+			<ol id="social_media"><!-- SOCIAL MEDIA BUTTONS -->
+				<li class="social_media_button"><a href="404error_page.html" target="_blank">
+					<img src="images/button_ln.png" alt="linkedin" id="linkedin"
 					onmouseover="this.src='images/button_ln_pressed.png'"
 					onmouseout="this.src='images/button_ln.png'"/></a>
-			</li>
-			<li class="social_media_button"><a href="404error_page.html" target="_blank">
-				<img src="images/button_twitter.png" alt="twitter" id="twitter"
+				</li>
+				<li class="social_media_button"><a href="404error_page.html" target="_blank">
+					<img src="images/button_twitter.png" alt="twitter" id="twitter"
 					onmouseover="this.src='images/button_twitter_pressed.png'"
 					onmouseout="this.src='images/button_twitter.png'"/></a>
-			</li>
-			<li class="social_media_button"><a href="404error_page.html" target="_blank">
-				<img src="images/button_fb.png" alt="facebook" id="facebook"
+				</li>
+				<li class="social_media_button"><a href="404error_page.html" target="_blank">
+					<img src="images/button_fb.png" alt="facebook" id="facebook"
 					onmouseover="this.src='images/button_fb_pressed.png'"
 					onmouseout="this.src='images/button_fb.png'"/></a>
-			</li>
-			<li class="social_media_button"><a href="mailto:a@b.ca">
-				<img src="images/button_email.png" alt="email" id="email"
+				</li>
+				<li class="social_media_button"><a href="mailto:a@b.ca">
+					<img src="images/button_email.png" alt="email" id="email"
 					onmouseover="this.src='images/button_email_pressed.png'"
 					onmouseout="this.src='images/button_email.png'"/></a>
-			</li>
-		</ol>
+				</li>
+			</ol>
 
-		<ol> <!-- FOOTER NAVIGATIONAL ITEMS -->
-			<li class="footer_menu"><a href="about-us.html">About Us</a></li>
-			<li class="footer_menu">|</li>
-			<li class="footer_menu"><a href="news.html">News</a></li>
-			<li class="footer_menu">|</li>
-			<li class="footer_menu"><a href="events.html">Events</a></li>
-			<li class="footer_menu">|</li>
-			<li class="footer_menu"><a href="packages.html">Packages</a></li>
-			<li class="footer_menu">|</li>
-			<li class="footer_menu"><a href="tours.html">Tours</a></li>
-			<li class="footer_menu">|</li>
-			<li class="footer_current_item"><a href="#top">Contact</a></li>
-			<li class="footer_menu">|</li>
-		</ol>
-
-		<span class="company-name">Copyright &copy; 2015 Get Your Salmon On!</span>
-    </footer> 
+			<ol> <!-- FOOTER NAVIGATIONAL ITEMS -->
+				<li class="footer_current_item"><a href="#top">About Us</a></li>
+				<li class="footer_menu">|</li>
+				<li class="footer_menu"><a href="news.html">News</a></li>
+				<li class="footer_menu">|</li>
+				<li class="footer_menu"><a href="events.html">Events</a></li>
+				<li class="footer_menu">|</li>
+				<li class="footer_menu"><a href="packages.html">Packages</a></li>
+				<li class="footer_menu">|</li>
+				<li class="footer_menu"><a href="tours.html">Tours</a></li>
+				<li class="footer_menu">|</li>
+				<li class="footer_menu"><a href="contact.html">Contact</a></li>
+				<li class="footer_menu">|</li>
+			</ol>
+			<span class="company-name">Copyright &copy; 2015 Get Your Salmon On!</span>
+        </footer> 
 
 <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="jquery-1.11.3.min.js"><\/script>');</script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>');</script>
 <script src = "js/javascript.js"></script>
 
 </body>
