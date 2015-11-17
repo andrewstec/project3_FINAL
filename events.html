@@ -11,20 +11,15 @@ date:		Tuesday, November 17, 2015
 	<meta name="authors" content="Marrion Nzuziluaka, Andrew Stec, Emma Vilataj, Hassan Hosseinpoor, and Kully Pawa">
 	<meta name="keywords" content="salmon, fish, Vancouver, Capilano, about">
     <meta name="description" content="Get your Salmon On! is an American tour operator that operates in the Metro Vancouver Capilano area.">
-	<link rel="stylesheet" href="styles/normalize.css">
-
-	<!-- marrion css -->
-	<link rel="stylesheet" type="text/css" href="styles/style_marrion.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- marrion css -->
+	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header> <!-- HEADER -->
 		<a href="about-us.html"><img src="images/logo.png" alt="Get Your Salmon On! Logo" id="logo"/></a>
-		<h1><a href="about-us.html">Get Your Salmon On!</a></h1>
+		<a href="about-us.html"><h1>Get Your Salmon On!</h1></a>
 		<a id="top"></a>
 		<a id="shopping-cart" href="about-us.html">View Cart <img src="images/shopping-cart.png" alt="View Shopping Cart"/></a>
 		<form class="search_bar" action="#" method="get">
@@ -62,19 +57,19 @@ date:		Tuesday, November 17, 2015
 			</div>
     <div class="container">
             
-	<aside>   <!-- NEWS (RIGHT-HAND) BAR -->
-				<h2>News Updates</h2>
-		<div>
-			
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Final Project complete and available for evaluation.</a>
-					<br />
-					<br />
-				<h3>November 02, 2015</h3>
-					<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
-					<br />
-					<br />
-					<hr />
+				<aside>  <!-- NEWS (RIGHT-HAND) BAR -->
+					<h2>News Updates</h2>
+					
+	<div>				
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Final Project complete and available for evaluation.</a>
+						<br />
+						<br />
+						<h3>November 02, 2015</h3>
+						<a href="404error_page.html">Movie Review Assignment Just Released!!!</a>
+						<br />
+						<br />
+						<hr />
 				<form class="login" action="#">
 					<ul>
 						<li>
@@ -104,96 +99,93 @@ date:		Tuesday, November 17, 2015
 						</li>
 					</ul>
 				</form>
-			</div>
-	</aside>
+				
+	</div>
+				</aside>
+
 			<main>	<!-- MAIN SECTION (CENTER COLUMN) -->
     
-	<article id="events-article">
-		<div>
-			<h2>Upcoming Events</h2>
-			<h3>Highlights of past and upcoming events. To see all events go to Calendar.</h3>
-			<a href="Calendar.html" id="calendar">
-	        <img src="images/2015calendar.jpg" alt="2015 Calendar" width="450" height="450">
-			</a>
-			<a href="Calendar.html">View Calendar >>
-			</a>
-			<iframe src="https://www.psf.ca/what-we-do" width="455" height="315"
-	            allowfullscreen frameborder="0">
-			</iframe>
-			<hr />
-			<ul>
-				<li><a href="#calendar">Today's Events</a></li>
-				<li><a href="#upcoming_events">Upcoming Events</a></li>
-				<li><a href="#video">Past Events</a></li>
-				<li><label>By Category: </label>
-					<select name="category" id="category">
-						<option value="community">Community & Recreation</option>
-						<option value="anniversary">20th Anniversary</option>
-						<option value="festivals">Festivals</option>
-					</select>
-				</li>
-			</ul>
-		</div>
+	<article>
+		<h2>Upcoming Events</h2>
+		<h3>Highlights of past and upcoming events. To see all events go to Calendar.</h3>
+		<a href="Calendar.html" id="calendar">
+        <img src="images/2015calendar.jpg" class="images" alt="2015 Calendar" width="450" height="450">
+		</a>
+		<a href="Calendar.html"><input type="submit" name="calendar" value="View Calendar >>">
+		</a>
+		<div class="iframe-container">
+		<iframe src="https://www.psf.ca/what-we-do" width="455" height="315"
+            allowfullscreen frameborder="0">
+		</iframe></div>
+		<hr />
+		<ul>
+			<li><a href="#calendar">Today's Events</a></li>
+			<li><a href="#upcoming_events">Upcoming Events</a></li>
+			<li><a href="#video">Past Events</a></li>
+			<li><label>By Category: </label>
+				<select name="category" id="category">
+					<option value="community">Community & Recreation</option>
+					<option value="anniversary">20th Anniversary</option>
+					<option value="festivals">Festivals</option>
+				</select>
+			</li>
+		</ul>
 	</article>
 	
-	<article id="pink-salmon">
-		<div>
-			<video id="video" width="550" height="360" controls>
-				<source src="videos/PinkSalmon_2015.mp4" type="video/mp4" />
-				<source src="videos/PinkSalmon_2015.ogv" type="video/ogg" />
+	<article>
+		<video id="video" width="550" height="360" controls>
+			<source src="media/PinkSalmon_2015.mp4" type="video/mp4" />
+			<source src="media/PinkSalmon_2015.ogv" type="video/ogg" />
 
-	        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
-	                codebase="http://download.macromedia.com/pub/shockwave/
-	                        cabs/flash/swflash.cab#version=6,0,40,0"
-	                width="1100" height="720"
-	                id="pink_salmon">
-	            <param name="movie"
-	                   value="videos/PinkSalmon_2015.swf" />
-	            <param name="quality" value="high" />
-	            <param name="bgcolor" value="#ffffff" />
-	            <embed src="videos/PinkSalmon_2015.swf" quality="high" bgcolor="#ffffff"
-	                   width="468" height="60"
-	                   name="mymoviename" align="" type="application/x-shockwave-flash"
-	                   pluginspage="http://www.macromedia.com/go/getflashplayer">
-	            </embed>
-	        </object>
-				<p>Video is not supported in your browser. Try the following links</p>
-			</video>
-		
-	    <section itempscope itemtype="http://www.data-vocabulary.org/Event/">
-    	</div>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="http://download.macromedia.com/pub/shockwave/
+                        cabs/flash/swflash.cab#version=6,0,40,0"
+                width="1100" height="720"
+                id="pink_salmon">
+            <param name="movie"
+                   value="media/PinkSalmon_2015.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <embed src="media/PinkSalmon_2015.swf" quality="high" bgcolor="#ffffff"
+                   width="468" height="60"
+                   name="mymoviename" align="" type="application/x-shockwave-flash"
+                   pluginspage="http://www.macromedia.com/go/getflashplayer">
+            </embed>
+        </object>
+			<p>Video is not supported in your browser. Try the following links</p>
+		</video>
+	
+    <section itempscope itemtype="http://www.data-vocabulary.org/Event/">
 	</article>
 	
 		<article>
-			<div>
-				<table id="upcoming_events">
-					<thead>
+			<table id="upcoming_events">
+				<thead>
+				<tr>
+					<th>Event Date</th>
+					<th>Event Name</th>
+					<th>Description</th>
+				</tr>
+				</thead>
+				<tbody>
 					<tr>
-						<th>Event Date</th>
-						<th>Event Name</th>
-						<th>Description</th>
+						<th itemprop="startdate">October 09:</th>
+						<td itemprop="name">Come get your salmon on!</td>
+						<td itemprop="description">Come celebrate National Salmon Day with us!</td>
 					</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th itemprop="startdate">October 09:</th>
-							<td itemprop="name">Come get your salmon on!</td>
-							<td itemprop="description">Come celebrate National Salmon Day with us!</td>
-						</tr>
-						</li>
-						<tr>
-							<th itemprop="startdate">October 14:</th>
-							<td itemprop="name">Pink salmon festival</td>
-							<td itemprop="description">Rain or shine! Join us for a festival at Kit's Point.</td>
-						</tr>
-						<tr>
-							<th itemprop="startdate">October 25:</th>
-							<td itemprop="name">Salmon Come Home</td>
-							<td itemprop="description">Join City of Coquitlam to welcome the salmon home!</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+					</li>
+					<tr>
+						<th itemprop="startdate">October 14:</th>
+						<td itemprop="name">Pink salmon festival</td>
+						<td itemprop="description">Rain or shine! Join us for a festival at Kit's Point.</td>
+					</tr>
+					<tr>
+						<th itemprop="startdate">October 25:</th>
+						<td itemprop="name">Salmon Come Home</td>
+						<td itemprop="description">Join City of Coquitlam to welcome the salmon home!</td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 		
 	</main>
